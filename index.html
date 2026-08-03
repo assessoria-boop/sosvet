@@ -254,31 +254,14 @@
       max-width: 420px;
     }
 
-    /* PASSOS */
+    /* STATS */
     .stats {
       background: var(--gradiente);
-      padding: 48px;
-    }
-
-    .passos-titulo {
-      text-align: center;
-      color: #fff;
-      font-size: 24px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-
-    .passos-sub {
-      text-align: center;
-      color: rgba(255,255,255,0.82);
-      font-size: 14px;
-      font-weight: 500;
-      margin-bottom: 34px;
+      padding: 28px 48px;
     }
 
     .stats-inner {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -287,31 +270,16 @@
 
     .stat {
       text-align: center;
-      padding: 8px 18px;
+      padding: 8px 16px;
       border-right: 1px solid rgba(255,255,255,0.22);
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
     }
     .stat:last-child { border-right: none; }
-
-    .passo-num {
-      width: 40px; height: 40px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.16);
-      border: 1.5px solid rgba(255,255,255,0.45);
-      color: #fff;
-      font-size: 15px;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 12px;
-      flex-shrink: 0;
-    }
-
-    .stat-num   { font-size: 16px; font-weight: 800; color: #fff; letter-spacing: -0.3px; line-height: 1.3; }
-    .stat-label { font-size: 13px; color: rgba(255,255,255,0.82); margin-top: 6px; font-weight: 500; line-height: 1.45; }
+    .stat-num   { font-size: 24px; font-weight: 900; color: #fff; letter-spacing: -0.8px; line-height: 1.15; }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 4px; font-weight: 500; }
 
     /* DEPOIMENTOS */
     .sec-depoi {
@@ -713,22 +681,13 @@
       .hero-sub { font-size: 16px; margin-bottom: 30px; white-space: normal; }
       .hero-btns { max-width: 100%; }
 
-      .stats { padding: 44px 20px; }
-      .passos-titulo { font-size: 21px; }
-      .passos-sub { font-size: 13px; margin-bottom: 26px; }
-      .stats-inner { grid-template-columns: 1fr; gap: 4px; max-width: 420px; }
-      .stat {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 22px 8px;
-        border-right: none;
-        border-bottom: 1px solid rgba(255,255,255,0.22);
-      }
-      .stat:last-child { border-bottom: none; }
-      .passo-num { width: 38px; height: 38px; font-size: 14px; margin-bottom: 10px; }
-      .stat-num { font-size: 16px; }
-      .stat-label { font-size: 13px; margin-top: 5px; }
+      .stats { padding: 0 20px; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .stat { padding: 20px 12px; border-right: 1px solid rgba(255,255,255,0.22); border-bottom: 1px solid rgba(255,255,255,0.22); }
+      .stat:nth-child(2) { border-right: none; }
+      .stat:nth-child(3) { border-bottom: none; }
+      .stat:nth-child(4) { border-right: none; border-bottom: none; }
+      .stat-num { font-size: 20px; }
 
       .sec-depoi { padding: 56px 0; }
       .sec-depoi-inner { padding: 0 20px; text-align: center; }
@@ -833,30 +792,24 @@
   </div>
 </div>
 
-<!-- PASSO A PASSO -->
+<!-- STATS -->
 <div class="stats">
-  <h2 class="passos-titulo">Seu pet só precisa desses 4 passos!</h2>
-  <p class="passos-sub">Do primeiro clique ao seu pet de volta em casa, feliz e saudável.</p>
   <div class="stats-inner">
     <div class="stat">
-      <div class="passo-num">01</div>
-      <div class="stat-num">Você clica no botão</div>
-      <div class="stat-label">Um toque em "Atendimento Imediato" e a conversa já abre no WhatsApp.</div>
+      <div class="stat-num">5,0 estrelas</div>
+      <div class="stat-label">Avaliações no Google</div>
     </div>
     <div class="stat">
-      <div class="passo-num">02</div>
-      <div class="stat-num">Fala com a nossa equipe</div>
-      <div class="stat-label">Resposta em 2 minutos para entender o caso e agendar o melhor horário.</div>
+      <div class="stat-num">TOP #01</div>
+      <div class="stat-label">da região</div>
     </div>
     <div class="stat">
-      <div class="passo-num">03</div>
-      <div class="stat-num">Seu pet é atendido</div>
-      <div class="stat-label">Consulta, exame ou cirurgia com veterinário plantonista e 16 anos de experiência.</div>
+      <div class="stat-num">16 Anos</div>
+      <div class="stat-label">De experiência</div>
     </div>
     <div class="stat">
-      <div class="passo-num">04</div>
-      <div class="stat-num">Volta para casa bem</div>
-      <div class="stat-label">Seu pet feliz e saudável, com orientação clara sobre cada próximo passo.</div>
+      <div class="stat-num" style="font-size:18px;letter-spacing:0;">Plantonista</div>
+      <div class="stat-label">Atendimento após as 18h</div>
     </div>
   </div>
 </div>
