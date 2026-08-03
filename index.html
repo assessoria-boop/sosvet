@@ -355,50 +355,13 @@
     .carrossel-dot.ativo { background: var(--marca); }
 
     .depoi-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
     }
 
-    .depoi-imagens { order: 1; }
-    .depoi-conteudo { order: 0; text-align: left; }
-    .depoi-titulo { font-size: 32px; margin-bottom: 14px; }
-    .depoi-sub {
-      font-size: 15px;
-      color: var(--cinza);
-      line-height: 1.6;
-      margin-bottom: 24px;
-      max-width: 460px;
-    }
-
-    .depoi-verificado {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 13px; font-weight: 600; color: var(--marca-escuro);
-      margin-bottom: 26px;
-    }
-    .depoi-verificado svg {
-      width: 18px; height: 18px;
-      stroke: var(--verde-wpp); fill: none; stroke-width: 2;
-      stroke-linecap: round; stroke-linejoin: round;
-    }
-
-    .depoi-features { display: flex; flex-direction: column; gap: 18px; }
-    .depoi-feature { display: flex; align-items: flex-start; gap: 14px; }
-    .depoi-feature-icone {
-      width: 40px; height: 40px;
-      background: var(--marca-suave);
-      border-radius: 11px;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .depoi-feature-icone svg {
-      width: 20px; height: 20px;
-      stroke: var(--marca); fill: none; stroke-width: 1.8;
-      stroke-linecap: round; stroke-linejoin: round;
-    }
-    .depoi-feature h4 { font-size: 15px; font-weight: 700; line-height: 1.35; }
-    .depoi-feature p { font-size: 13px; color: var(--cinza); line-height: 1.5; margin-top: 3px; }
+    .depoi-conteudo { text-align: center; }
+    .depoi-titulo { font-size: 32px; margin-bottom: 0; max-width: 720px; margin-left: auto; margin-right: auto; }
 
     /* SEÇÕES GERAIS */
     .sec {
@@ -694,12 +657,7 @@
       .carrossel-slide { padding: 0 16px; }
       .review-img-card { max-width: 100%; }
 
-      .depoi-grid { grid-template-columns: 1fr; gap: 36px; }
-      .depoi-imagens { order: 0; }
-      .depoi-conteudo { order: 1; text-align: center; margin-top: 4px; }
-      .depoi-sub { margin-left: auto; margin-right: auto; }
-      .depoi-verificado { justify-content: center; }
-      .depoi-features { max-width: 440px; margin: 0 auto; text-align: left; }
+      .depoi-grid { gap: 28px; }
 
       .sec { padding: 56px 20px; text-align: center; }
       .sec-titulo { font-size: 28px; }
@@ -818,6 +776,11 @@
 <div class="sec-depoi">
   <div class="sec-depoi-inner">
    <div class="depoi-grid">
+    <div class="depoi-conteudo">
+      <span class="sec-tag">Depoimentos reais</span>
+      <h2 class="sec-titulo depoi-titulo" style="margin-bottom:0;">Por que tutores de Catalão e região <span>confiam na SOS Vet há 16 anos?</span></h2>
+    </div>
+
     <div class="depoi-imagens">
       <div class="carrossel-wrap">
         <div class="carrossel-track" id="carrosselTrack">
@@ -857,47 +820,6 @@
             <div class="carrossel-dot" onclick="irParaSlide(4)"></div>
           </div>
           <button class="carrossel-btn" onclick="moverCarrossel(1)" aria-label="Próximo">&#8594;</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="depoi-conteudo">
-      <span class="sec-tag">Depoimentos reais</span>
-      <h2 class="sec-titulo depoi-titulo">Por que tutores de Catalão e região <span>confiam na SOS Vet há 16 anos?</span></h2>
-      <p class="depoi-sub">A equipe da SOS Vet une 16 anos de experiência clínica, especialidade em cirurgia veterinária e o atendimento acolhedor que fez a clínica ser referência em Catalão e nas cidades da região.</p>
-
-      <div class="depoi-verificado">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l2.5 2.5L16 9"/></svg>
-        Avaliações verificadas · Google Reviews
-      </div>
-
-      <div class="depoi-features">
-        <div class="depoi-feature">
-          <div class="depoi-feature-icone">
-            <svg viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/><path d="M12 10v-2"/><path d="M11 9h2"/></svg>
-          </div>
-          <div>
-            <h4>16 anos de tradição em Catalão</h4>
-            <p>A clínica que acompanha famílias e gerações de pets, com o mesmo compromisso de sempre.</p>
-          </div>
-        </div>
-        <div class="depoi-feature">
-          <div class="depoi-feature-icone">
-            <svg viewBox="0 0 24 24"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><path d="M4 3h4"/><path d="M16 3h4"/><path d="M12 15v3a3 3 0 0 0 6 0v-1"/><circle cx="18.5" cy="16" r="2"/></svg>
-          </div>
-          <div>
-            <h4>Referência técnica em cirurgia veterinária</h4>
-            <p>Procedimentos delicados realizados com precisão e a segurança que seu pet merece.</p>
-          </div>
-        </div>
-        <div class="depoi-feature">
-          <div class="depoi-feature-icone">
-            <svg viewBox="0 0 24 24"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg>
-          </div>
-          <div>
-            <h4>Atendimento que escuta antes de tudo</h4>
-            <p>Explicamos cada exame, cada diagnóstico e cada orçamento com clareza, sem pressa e sem enrolação.</p>
-          </div>
         </div>
       </div>
     </div>
