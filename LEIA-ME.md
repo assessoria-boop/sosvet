@@ -18,7 +18,7 @@ Para converter imagens em webp: https://squoosh.app (qualidade 80 já é suficie
 
 ## Configurações já aplicadas
 
-- WhatsApp: +55 64 3442-4227 (número não aparece em texto, só nos botões)
+- WhatsApp: +55 62 98159-2754 (número não aparece em texto, só nos botões)
 - Mensagem automática: "Olá encontrei vocês pelo Google, gostaria de atendimento."
 - Google Tag Manager: GTM-MWM2NJSC
 - Mapa: embed oficial da SOS Vet Clínica Veterinária
