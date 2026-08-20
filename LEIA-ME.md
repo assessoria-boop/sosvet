@@ -23,5 +23,5 @@ Para converter imagens em webp: https://squoosh.app (qualidade 80 já é suficie
 - Google Tag Manager: GTM-MWM2NJSC
 - Mapa: embed oficial da SOS Vet Clínica Veterinária
 - Fontes do sistema, zoom e arraste lateral bloqueados no mobile
-- Todos os botões em verde WhatsApp, texto "Atendimento Imediato"
+- Todos os botões em verde WhatsApp, texto "Atendimento Rápido Agora"
 - Botão do cabeçalho: "Entre em contato" (nome da clínica oculto no mobile)
